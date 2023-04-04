@@ -37,7 +37,7 @@ li {
   padding: 1rem 2rem;
   background-color: var(--almost-white);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -93,10 +93,7 @@ button,
   border: none;
 }
 
-.ham-menu {
-  display: none;
-}
-
+.ham-menu,
 .mobile-menu {
   display: none;
 }
@@ -124,7 +121,7 @@ button,
   }
 
   .mobile-menu {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -164,6 +161,7 @@ button,
   }
 
   .active {
+    display: flex;
     right: 0;
   }
 
