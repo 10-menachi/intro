@@ -137,6 +137,7 @@ button,
     background-color: #fff;
     z-index: 1;
     padding-top: 15%;
+    transition: 0.5s ease-in-out;
   }
 
   .mobile-menu .menu-items {
