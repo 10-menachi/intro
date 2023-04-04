@@ -5,3 +5,25 @@
   --font-size-paragraph: 18px;
   --font-family-page: "Epilogue", sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-page);
+}
+
+body {
+  background-color: var(--almost-white);
+  color: var(--almost-black);
+  font-size: var(--font-size-paragraph);
+  scroll-behavior: smooth;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
