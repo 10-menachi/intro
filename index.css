@@ -40,6 +40,8 @@ li {
   position: sticky;
   top: 0;
   left: 0;
+  right: 0;
+  z-index: 100000000000000000000;
   width: 100%;
 }
 
@@ -79,7 +81,7 @@ button,
   background-color: var(--almost-white);
   border: 2px solid var(--almost-black);
   border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.5rem;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
@@ -100,6 +102,59 @@ button,
 
 .logo {
   margin-top: 1rem;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  gap: 2rem;
+}
+
+.main-section .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.main-section .left h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.main-section .left p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.main-section .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main-section .right img {
+  width: 100%;
+}
+
+.sponsors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  gap: 2rem;
+}
+
+.sponsors img {
+  object-fit: contain;
+  width: 3rem;
 }
 
 @media screen and (max-width: 850px) {
@@ -171,6 +226,17 @@ button,
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+  }
+
+  .main-section {
+    flex-direction: column;
+  }
+
+  /* move the image on top of the left section */
+
+  .main-section .right {
+    order: -1;
+    margin-bottom: 5rem;
   }
 }
 
