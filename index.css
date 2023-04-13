@@ -3,7 +3,7 @@
   --medium-gray: hsl(0, 0%, 41%);
   --almost-black: hsl(0, 0%, 8%);
   --font-size-paragraph: 18px;
-  --font-family-page: "Epilogue", sans-serif;
+  --font-family-page: 'Epilogue', sans-serif;
 }
 
 * {
@@ -140,6 +140,11 @@ button,
   gap: 2rem;
 }
 
+.sponsors img {
+  object-fit: contain;
+  width: 3rem;
+}
+
 .main-section .right img {
   width: 100%;
 }
@@ -150,11 +155,6 @@ button,
   align-items: center;
   padding: 2rem 2rem;
   gap: 2rem;
-}
-
-.sponsors img {
-  object-fit: contain;
-  width: 3rem;
 }
 
 @media screen and (max-width: 850px) {
